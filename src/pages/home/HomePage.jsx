@@ -7,11 +7,7 @@ import { ToggleContext } from '../../context/ToggleContext';
 function HomePage() {
   const { setActiveNav } = useContext(ToggleContext);
 
-  let navigate = useNavigate();
 
-  useEffect(() => {
-    setActiveNav('/');
-  }, []);
 
   const downloadFromGoogleDrive = () => {
     console.log('downloadFromGoogleDrive');
